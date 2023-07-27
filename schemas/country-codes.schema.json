@@ -1,0 +1,35 @@
+{
+    "$id": "/schemas/country-code.schema.json",
+
+    "type": "string",
+    "anyOf": [
+        {
+            "$ref": "#/definitions/NL"
+        },
+        {
+            "$ref": "#/definitions/DE"
+        }
+    ],
+
+    "definitions": {
+        "NL": {
+            "type": "string",
+            "const": "NL",
+            "title": "Nederland",
+            "properties": {
+                "3LetterCode": { "const": "NED" },
+                "Url": { "const": "https://ned" }
+            }
+        },
+        "DE": {
+            "type": "string",
+            "const": "DE",
+            "title": "Duitsland",
+            "properties": {
+                "3LetterCode": { "const": "GER" },
+                "Url": { "const": "https://ger" }
+            }
+        }
+        
+    }
+}
