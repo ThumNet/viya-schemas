@@ -1,0 +1,4 @@
+{
+    "$schema": "schemas/shipment.schema.json",
+    "countryCode": "NL"
+}

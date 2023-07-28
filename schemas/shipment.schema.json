@@ -1,0 +1,8 @@
+{
+    "type": "object",
+    "properties": {
+        "countryCode": { "$ref": "country-codes.schema.json" },
+        "streetName": {"type": "string"}
+    },
+    "required": [ "countryCode" ]
+}

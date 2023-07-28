@@ -4,6 +4,7 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace Sample;
 
+// ReSharper disable once ClassNeverInstantiated.Global
 public class RefSchemaFilter : ISchemaFilter
 {
     public void Apply(OpenApiSchema schema, SchemaFilterContext context)
